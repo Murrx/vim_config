@@ -21,3 +21,4 @@ set shiftwidth=4
 set softtabstop=4
 
 execute pathogen#infect()
+autocmd BufWritePost *.py call Flake8()
