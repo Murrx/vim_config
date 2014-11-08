@@ -1,5 +1,7 @@
+execute pathogen#infect()
 " Inndent automatically depending on filetype
 filetype indent on
+filetype plugin indent on
 set autoindent
 
 " Turn on line numbering. Turn it off with "set nonu" 
@@ -20,5 +22,5 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
-execute pathogen#infect()
 autocmd BufWritePost *.py call Flake8()
+set sessionoptions-=options
